@@ -14,6 +14,12 @@ if (intNumber == intAdded)
 }
 
 // ruleid: ex06_dbg_pattern-either
+if (intNumber != intAdded)
+{
+	console.log("Should appear")
+}
+
+// ruleid: ex06_dbg_pattern-either
 if (intNumber == intAdded - 1)
 {
 	console.log("Appears but is theoretically dangerous")
