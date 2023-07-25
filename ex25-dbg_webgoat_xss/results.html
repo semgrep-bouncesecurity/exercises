@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>stdin</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+                    
+                    
+┌──────────────────┐
+│ 10 Code Findings │
+└──────────────────┘
+                                                     
+  <span style="color:aqua;">  WebGoat/Content/StoredXSS.aspx.cs </span>
+       <span style="font-weight:bold;">ex25-dbg_webgoat_xss</span>                      
+          potential XSS was found, tainted data is &quot;comment&quot;
+                                                            
+           52┆ <span style="font-weight:bold;">lblComments.Text = comments;</span>
+            ⋮┆----------------------------------------
+       <span style="font-weight:bold;">ex25-dbg_webgoat_xss</span>                    
+          potential XSS was found, tainted data is &quot;email&quot;
+                                                          
+           52┆ <span style="font-weight:bold;">lblComments.Text = comments;</span>
+                                                         
+  <span style="color:aqua;">  WebGoat/WebGoatCoins/MainPage.aspx.cs </span>
+       <span style="font-weight:bold;">ex25-dbg_webgoat_xss</span>                
+          potential XSS was found, tainted data is col
+                                                      
+           42┆ <span style="font-weight:bold;">cell2.Text = row[col].ToString();</span>
+                                                       
+  <span style="color:aqua;">  WebGoat/WebGoatCoins/Orders.aspx.cs </span>
+       <span style="font-weight:bold;">ex25-dbg_webgoat_xss</span>                          
+          potential XSS was found, tainted data is &quot;orderNumber&quot;
+                                                                
+           83┆ <span style="font-weight:bold;">litErrorDetailMessage.Text = &quot;Error finding order number &quot; + orderNumber + &quot;. Details: &quot; +     
+  ex.Message;</span>                                                                                                     
+            ⋮┆----------------------------------------
+       <span style="font-weight:bold;">ex25-dbg_webgoat_xss</span>                    
+          potential XSS was found, tainted data is &quot;image&quot;
+                                                          
+           92┆ <span style="font-weight:bold;">lblOutput.Text = fi.FullName;</span>
+            ⋮┆----------------------------------------
+          100┆ <span style="font-weight:bold;">Response.AppendHeader(&quot;Content-Disposition&quot;, &quot;attachment; filename=&quot; + fi.Name);</span>
+            ⋮┆----------------------------------------
+          101┆ <span style="font-weight:bold;">Response.TransmitFile(fi.FullName);</span>
+            ⋮┆----------------------------------------
+       <span style="font-weight:bold;">ex25-dbg_webgoat_xss</span>              
+          potential XSS was found, tainted data is 0
+                                                    
+          114┆ <span style="font-weight:bold;">link.Text = e.Row.Cells[0].Text;</span>
+                                                               
+  <span style="color:aqua;">  WebGoat/WebGoatCoins/ProductDetails.aspx.cs </span>
+       <span style="font-weight:bold;">ex25-dbg_webgoat_xss</span>                            
+          potential XSS was found, tainted data is &quot;productNumber&quot;
+                                                                  
+           82┆ <span style="font-weight:bold;">lblOutput.Text = output;</span>
+            ⋮┆----------------------------------------
+           83┆ <span style="font-weight:bold;">lblComments.Text = comments;</span>
+</pre>
+</body>
+</html>
