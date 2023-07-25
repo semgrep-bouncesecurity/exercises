@@ -6,7 +6,7 @@ rules:
 
 
     severity: WARNING
-    message: potential XSS was found, tainted data is $VAR, sink is $LABEL
+    message: potential XSS was found, tainted data is $VAR
     metadata:
       category: security
       owasp: A7:2017 xss
