@@ -1,0 +1,57 @@
+                    
+                    
+┌──────────────────┐
+│ 10 Code Findings │
+└──────────────────┘
+                                                     
+  [36m[22m[24m  WebGoat/Content/StoredXSS.aspx.cs [0m
+       [1m[24mex25-dbg_webgoat_xss[0m                                           
+          potential XSS was found, tainted data is "comment", sink is lblComments
+                                                                                 
+           52┆ [1m[24mlblComments.Text = comments;[0m
+            ⋮┆----------------------------------------
+       [1m[24mex25-dbg_webgoat_xss[0m                                         
+          potential XSS was found, tainted data is "email", sink is lblComments
+                                                                               
+           52┆ [1m[24mlblComments.Text = comments;[0m
+                                                         
+  [36m[22m[24m  WebGoat/WebGoatCoins/MainPage.aspx.cs [0m
+       [1m[24mex25-dbg_webgoat_xss[0m                               
+          potential XSS was found, tainted data is col, sink is cell2
+                                                                     
+           42┆ [1m[24mcell2.Text = row[col].ToString();[0m
+                                                       
+  [36m[22m[24m  WebGoat/WebGoatCoins/Orders.aspx.cs [0m
+       [1m[24mex25-dbg_webgoat_xss[0m                                                         
+          potential XSS was found, tainted data is "orderNumber", sink is litErrorDetailMessage
+                                                                                               
+           83┆ [1m[24mlitErrorDetailMessage.Text = "Error finding order number " + orderNumber + ". Details: " +     
+  ex.Message;[0m                                                                                                     
+            ⋮┆----------------------------------------
+       [1m[24mex25-dbg_webgoat_xss[0m                                       
+          potential XSS was found, tainted data is "image", sink is lblOutput
+                                                                             
+           92┆ [1m[24mlblOutput.Text = fi.FullName;[0m
+            ⋮┆----------------------------------------
+       [1m[24mex25-dbg_webgoat_xss[0m                                    
+          potential XSS was found, tainted data is "image", sink is $LABEL
+                                                                          
+          100┆ [1m[24mResponse.AppendHeader("Content-Disposition", "attachment; filename=" + fi.Name);[0m
+            ⋮┆----------------------------------------
+          101┆ [1m[24mResponse.TransmitFile(fi.FullName);[0m
+            ⋮┆----------------------------------------
+       [1m[24mex25-dbg_webgoat_xss[0m                            
+          potential XSS was found, tainted data is 0, sink is link
+                                                                  
+          114┆ [1m[24mlink.Text = e.Row.Cells[0].Text;[0m
+                                                               
+  [36m[22m[24m  WebGoat/WebGoatCoins/ProductDetails.aspx.cs [0m
+       [1m[24mex25-dbg_webgoat_xss[0m                                               
+          potential XSS was found, tainted data is "productNumber", sink is lblOutput
+                                                                                     
+           82┆ [1m[24mlblOutput.Text = output;[0m
+            ⋮┆----------------------------------------
+       [1m[24mex25-dbg_webgoat_xss[0m                                                 
+          potential XSS was found, tainted data is "productNumber", sink is lblComments
+                                                                                       
+           83┆ [1m[24mlblComments.Text = comments;[0m

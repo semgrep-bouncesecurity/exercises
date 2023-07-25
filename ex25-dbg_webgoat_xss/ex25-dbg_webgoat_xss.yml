@@ -1,0 +1,14 @@
+rules:
+  - id: ex25-dbg_webgoat_xss
+    languages:
+      - csharp
+    mode: taint
+
+
+    severity: WARNING
+    message: potential XSS was found, tainted data is $VAR, sink is $LABEL
+    metadata:
+      category: security
+      owasp: A7:2017 xss
+      cwe: "CWE 79: Improper Neutralization of Input During Web Page Generation
+        ('Cross-site Scripting')"
